@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&family=Montserrat:ital,wght@0,800;0,900;1,800;1,900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    font-family: "Montserrat", sans-serif;
+    color: #222;
+    background-color: aliceblue;
+}
+
+body {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.nav {
+    text-align: center;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(157, 255, 161);
+    border-radius: 0 0 8px 8px;
+}
+
+.nav a {
+    color: #222;
+}
+
+.nav h3 {
+    padding-top: 25px;
+    font-size: 1.4rem;
+}
+
+.navItens {
+    display: flex;
+}
+
+.navItens li {
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    margin-left: 0.8vw;
+}
+
+.navItens a {
+    text-decoration: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.navItens a:hover {
+    background-color: rgb(65, 211, 77);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 0.5vw;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    /*align-items: center;*/
+}
+
+.post {
+    position: relative;
+    width: 250px;
+    height: 300px;
+    justify-self: center;
+}
+
+.postImage {
+    width: 250px;
+    height: 300px;
+}
+
+.postLink {
+    position: absolute;
+    background-color: white;
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    text-align: center;
+    font-size: 1.4rem;
+    text-decoration: none;
+    visibility: 0;
+    opacity: 0;
+    padding-top: 50%;
+    color: black;
+    border-radius: 10px;
+    transition: opacity .2s;
+}
+
+.post:hover .postLink {
+    visibility: visible;
+    opacity: 0.5;
+}
+
+.profile {
+    display: none;
+    grid-template-columns: 1fr 2fr;
+    padding: 1%;
+}
+
+.profileImageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.profile-pic {
+    max-width: 20vw;
+}
+
+.profileText {
+    padding: 10px;
+}
+
+.profileText h3 {
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding-top: 1%;
+    background-color: rgb(157, 255, 161);
+    border-radius: 8px 8px 0 0;
+}
+
+footer p {
+    padding: 5px;
+}
+
+.contact {
+    text-align: center;
+    padding: 1%;
+}
+
+.navLink {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.navLink li {
+    list-style-type: none;
+}
+
+.navLink a {
+    text-decoration: none;
+    color: #222;
+}
+
+.navLink abbr {
+    text-decoration: none;
+}
+
+.navLink img {
+    width: 40px;
+    height: 40px;
+    margin: 0.1vw 2vw;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.navLink img:hover {
+    background-color: rgb(65, 211, 77);
+}

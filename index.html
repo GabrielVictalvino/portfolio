@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Portfólio - Gabriel V. Aguirre </title>
+</head>
+<body onload="retrieveRepos()">
+    <header class="nav">
+        <h3>
+            Gabriel V. Aguirre
+        </h3>
+        <ul class="navItens">
+            <li>
+                <a onclick="showHome()">Home</a>
+            </li>
+            <li>
+                <a onclick="showAbout()">Projetos</a>
+            </li>   
+        </ul>    
+    </header>
+
+    <section class="gallery" id="gallery">
+    </section>
+
+    <section class="profile" id="profile">
+        <div class="profileImageContainer">
+            <img class="profile-pic" src="img/foto.jpeg" alt="minha foto">
+        </div>
+        <div class="profileText">
+            <h3>
+                Quem Sou Eu?
+            </h3>
+            <p>
+                Estudante de programação e em inicio de carreira como front-end, 
+                sou um entusiasta de programação e tecnologia, 
+                porém sempre atento as principais tecnologias do mercado e sempre disposto a me atualizar e contuniar estudando. 
+                Atualmente estou programando em JavaScript e React, e aprendendo Node.js pois ambiciono me tornar um fullstack. 
+                Também estou estudando inglês para aperfeiçoar meu nível neste idioma.
+                Em busca de novos desafios para chegar cada vez mais próximo da comunidade DEV e poder ajudar os colegas com projetos.
+                Procuro uma oportunidade que eu possa, além de trabalhar, me aperfeiçoar e aprende mais na área de desenvolvedor 
+                e me tornar um profissional mais hábil e capacitado.
+            </p>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h3>Contatos</h3>
+        <ul class="navLink">
+            <li>
+                <a href="https://github.com/GabrielVictalvino" target="_blank">
+                    <abbr title="github.com/GabrielVictalvino">
+                        <img src="img/github.png" alt="GitHub">
+                        <p>GitHub</p>
+                    </abbr>
+                </a>
+                
+            </li>
+            <li>
+                <a href="mailto: g.victalvino@gmail.com" target="_blank">
+                    <abbr title="g.victalvino@gmail.com">
+                        <img src="img/email.png" alt="E-mail">
+                        <p>E-mail</p>
+                    </abbr>
+                </a>            
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/gabrielaguirre01/" target="_blank">
+                    <abbr title="linkedin.com/in/gabrielaguirre01">
+                        <img src="img/linkedin.png" alt="Linkedin">
+                        <p>Linkedin</p>
+                    </abbr>
+                </a>      
+            </li>
+        </ul>
+    </section>
+    <footer>
+        <p>Gabriel Victalvino Aguirre &copy</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
